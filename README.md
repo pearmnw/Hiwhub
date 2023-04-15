@@ -1,2 +1,0 @@
-# Hiwhub
-For Hiwhub Application
