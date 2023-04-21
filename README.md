@@ -1,4 +1,4 @@
-# flutter_project_ice
+# flutter project
 
 A new Flutter project.
 
