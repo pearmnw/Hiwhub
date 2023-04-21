@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "124407712666",
+    "project_id": "hiwhub-df6e6",
+    "storage_bucket": "hiwhub-df6e6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:124407712666:android:60d48110cb9569fd0b0823",
+        "android_client_info": {
+          "package_name": "com.example.flutter_project_ice"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "124407712666-dt2rf66q4a3thm4b3c7dum55j283btq6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDwgGiccK7VGNw0XqGDtCebBcbIQBBY_9I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "124407712666-dt2rf66q4a3thm4b3c7dum55j283btq6.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "124407712666-cf0t1mhfa7it9ngirdkku8mf6esgnkf2.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.flutterProjectIce"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
