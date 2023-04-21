@@ -1,3 +1,4 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:geolocator/geolocator.dart';
 import 'package:permission_handler/permission_handler.dart';
@@ -13,6 +14,7 @@ class RecommendPage extends StatefulWidget {
 }
 
 class _RecommendPageState extends State<RecommendPage> {
+  final auth = FirebaseAuth.instance;
   Position? _currentUserPosition;
   double? distanceInMeter = 0.0;
   List<Map<String, dynamic>> resList = [];
@@ -91,14 +93,14 @@ class _RecommendPageState extends State<RecommendPage> {
               width: width * 0.5,
             ),
           ),
-          const Positioned(
+          Positioned(
             top: 40,
-            left: 109,
+            left: 100,
             child: Text(
-              "Hi, Hermione Granger",
+              "Hi, ${auth.currentUser!.email!}",
               textAlign: TextAlign.left,
               textScaleFactor: 1.5,
-              style: TextStyle(
+              style: const TextStyle(
                   color: Colors.black,
                   fontSize: 14,
                   fontWeight: FontWeight.bold),

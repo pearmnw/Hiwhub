@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:project/Screens/welcomePage.dart';
-import 'package:project/Screens/homePage.dart';
-import 'package:project/Screens/registerPage.dart';
+import 'package:maps_launcher/maps_launcher.dart';
 
 class DetailPageForRecom extends StatefulWidget {
   final Map<String, dynamic> data;
@@ -65,27 +63,19 @@ class _DetailPageForRecomState extends State<DetailPageForRecom> {
                   ],
                 ),
               ),
-            ],
-          ),
-          bottomNavigationBar: BottomNavigationBar(
-            type: BottomNavigationBarType.fixed, // Fixed
-            backgroundColor:
-                const Color(0xFFF4E9CE), // <-- This works for fixed
-            selectedItemColor: const Color(0xffd86c00),
-            unselectedItemColor: const Color(0xffdfa000),
-            items: [
-              BottomNavigationBarItem(
-                icon: Icon(Icons.home),
-                label: 'Home',
-              ),
-              BottomNavigationBarItem(
-                icon: Icon(Icons.search),
-                label: 'search',
-              ),
-              BottomNavigationBarItem(
-                icon: Icon(FontAwesomeIcons.userAlt),
-                label: 'Profile',
-              ),
+              SizedBox(height: 8),
+              TextButton(
+                  style: TextButton.styleFrom(
+                    backgroundColor: const Color(0xFFF9BC1F),
+                  ),
+                  onPressed: () {
+                    MapsLauncher.launchCoordinates(
+                        widget.data['Latitude'], widget.data['Longitude']);
+                  },
+                  child: const Text(
+                    'Open the Google Map',
+                    style: TextStyle(color: Colors.white),
+                  ))
             ],
           ),
         ),

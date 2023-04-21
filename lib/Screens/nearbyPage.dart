@@ -1,3 +1,4 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:geolocator/geolocator.dart';
 import 'package:permission_handler/permission_handler.dart';
@@ -14,6 +15,7 @@ class NearbyPage extends StatefulWidget {
 }
 
 class _NearbyPageState extends State<NearbyPage> {
+  final auth = FirebaseAuth.instance;
   Position? _currentUserPosition;
   double? distanceInMeter = 0.0;
   List<Map<String, dynamic>> resList = [];
@@ -111,14 +113,14 @@ class _NearbyPageState extends State<NearbyPage> {
               width: width * 0.5,
             ),
           ),
-          const Positioned(
+          Positioned(
             top: 40,
-            left: 109,
+            left: 100,
             child: Text(
-              "Hi, Hermione Granger",
+              "Hi, ${auth.currentUser!.email!}",
               textAlign: TextAlign.left,
               textScaleFactor: 1.5,
-              style: TextStyle(
+              style: const TextStyle(
                   color: Colors.black,
                   fontSize: 14,
                   fontWeight: FontWeight.bold),

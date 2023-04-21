@@ -75,7 +75,7 @@ class _ProfilePageState extends State<ProfilePage> {
                       left: 75,
                       child: Text(
                         auth.currentUser!.email!,
-                        style: TextStyle(
+                        style: const TextStyle(
                             fontSize: 25,
                             color: Color.fromARGB(255, 0, 0, 0),
                             fontWeight: FontWeight.bold),
