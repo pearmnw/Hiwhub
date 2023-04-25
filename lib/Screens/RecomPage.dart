@@ -4,7 +4,6 @@ import 'package:geolocator/geolocator.dart';
 import 'package:permission_handler/permission_handler.dart';
 import 'package:project/Screens/detailPage_for_Recom.dart';
 import 'package:project/data/cloud_firestore.dart';
-// import 'package:project/data/cloud_firestore.dart';
 
 class RecommendPage extends StatefulWidget {
   const RecommendPage({super.key});
@@ -25,27 +24,9 @@ class _RecommendPageState extends State<RecommendPage> {
       // Handle the case if permission is not granted
       return;
     }
-    // itemList = await firebaseQuery.getItems();
 
     _currentUserPosition = await Geolocator.getCurrentPosition(
         desiredAccuracy: LocationAccuracy.high);
-    // print(_currentUserPosition!.altitude);
-    // print(_currentUserPosition!.longitude);
-
-    // double storelat = 5.0;
-    // double storelng = -122.084;
-
-    //
-    // print(itemList);
-  }
-
-  Future<bool> _requestLocationPermission() async {
-    var status = await Permission.location.request();
-    if (status == PermissionStatus.granted) {
-      return true;
-    } else {
-      return false;
-    }
   }
 
   @override

@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:project/Screens/resultPage.dart';
-// import 'package:project/Screens/resultPage.dart';
 
 class SearchPage extends StatefulWidget {
   const SearchPage({Key? key}) : super(key: key);
@@ -116,29 +115,6 @@ class _SearchPageState extends State<SearchPage> {
                 width: size.width * 0.65,
               ),
             ),
-            // Positioned(
-            //     top: 140,
-            //     left: 58,
-            //     child: Column(
-            //       children: [
-            //         Container(
-            //           color: Colors.white,
-            //           child: Padding(
-            //             padding: const EdgeInsets.all(20),
-            //             child: Row(
-            //               children: [
-            //                 IconButton(
-            //                     onPressed: () => _onSubmitted(_queryText),
-            //                     icon: const Icon(
-            //                       Icons.arrow_back_ios,
-            //                       color: Color.fromARGB(255, 255, 204, 0),
-            //                     ))
-            //               ],
-            //             ),
-            //           ),
-            //         )
-            //       ],
-            //     )),
           ],
         ),
       ),

@@ -5,8 +5,6 @@ import 'package:permission_handler/permission_handler.dart';
 import 'package:project/Screens/detailPage.dart';
 import 'package:project/data/cloud_firestore.dart';
 
-import 'homePage.dart';
-
 class NearbyPage extends StatefulWidget {
   const NearbyPage({Key? key}) : super(key: key);
 

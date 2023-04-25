@@ -221,7 +221,7 @@ class _LoginPageState extends State<LoginPage> {
                                     builder: (context) => const RegisterPage()),
                               );
                             },
-                            child: Text(
+                            child: const Text(
                               "Register",
                               style: TextStyle(
                                   color: Color.fromARGB(255, 255, 191, 0),
@@ -232,7 +232,7 @@ class _LoginPageState extends State<LoginPage> {
                       ],
                     )));
           }
-          return Scaffold(
+          return const Scaffold(
             body: Center(
               child: CircularProgressIndicator(),
             ),

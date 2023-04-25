@@ -35,18 +35,18 @@ dependencies:
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
-  font_awesome_flutter: ^10.4.0
-  flutter_svg: ^2.0.4
-  geolocator: ^9.0.2
-  google_maps_flutter: ^2.0.6
-  permission_handler: ^8.3.0
-  cloud_firestore: ^4.5.0
-  firebase_auth: ^4.4.0
-  firebase_core: ^2.9.0
-  fluttertoast: ^8.2.1
-  form_field_validator: ^1.1.0
-  location: ^4.4.0
-  maps_launcher: ^2.2.0
+  font_awesome_flutter: ^10.4.0 # Icons package
+  flutter_svg: ^2.0.4 # SVG rendering and widget
+  geolocator: ^9.0.2 # Plugin provides API for generic location
+  google_maps_flutter: ^2.0.6 # Plugin for integrating Google Maps
+  permission_handler: ^8.3.0 # Plugin provides API to request and check permissions
+  cloud_firestore: ^4.5.0 # Plugin for Cloud Firestore (Cloud)
+  firebase_auth: ^4.4.0 # Plugin for Firebase Auth (Login/register)
+  firebase_core: ^2.9.0 # Plugin for Firebase Core (Cloud)
+  fluttertoast: ^8.2.1 # Create toast messages (Login/register)
+  form_field_validator: ^1.1.0 # Form Field Validator
+  location: ^4.4.0 # Realtime location
+  maps_launcher: ^2.2.0 # Plugin to open the maps application
 
 dev_dependencies:
   flutter_test:

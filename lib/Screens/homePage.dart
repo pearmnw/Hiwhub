@@ -1,11 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:project/Screens/RecomPage.dart';
+import 'package:project/Screens/recomPage.dart';
 import 'package:project/Screens/nearbyPage.dart';
 import 'package:project/Screens/profilePage.dart';
-import 'package:project/Screens/resultPage.dart';
 import 'package:project/Screens/searchPage.dart';
-import 'package:project/model/profile.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
